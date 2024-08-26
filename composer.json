@@ -13,6 +13,6 @@
         }
     ],
     "license": "MIT",
-    "minimum-stability": "beta",
+    "minimum-stability": "dev",
     "require": {}
 }
