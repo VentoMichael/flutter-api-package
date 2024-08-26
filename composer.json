@@ -1,0 +1,16 @@
+{
+    "name": "vento/flutter-api-package",
+    "description": "A package to integrate API for Flutter app.",
+    "autoload": {
+        "psr-4": {
+            "Vento\\FlutterApiPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michael Vento",
+            "email": "michael.vento@everysoft.be"
+        }
+    ],
+    "require": {}
+}
