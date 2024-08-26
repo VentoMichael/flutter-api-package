@@ -3,7 +3,7 @@
     "description": "A package to integrate API for Flutter app.",
     "autoload": {
         "psr-4": {
-            "YourUsername\\FlutterApiPackage\\": "src/"
+            "Vento\\FlutterApiPackage\\": "src/"
         }
     },
     "authors": [
@@ -14,7 +14,5 @@
     ],
     "license": "MIT",
     "minimum-stability": "beta",
-    "require": {
-        "ventom/flutter-api-package": "*"
-    }
+    "require": {}
 }
