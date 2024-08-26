@@ -1,5 +1,5 @@
 {
-    "name": "vento/flutter-api-package",
+    "name": "ventom/flutter-api-package",
     "description": "A package to integrate API for Flutter app.",
     "autoload": {
         "psr-4": {
