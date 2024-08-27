@@ -54,14 +54,11 @@ class MakeFlutterCommand extends Command
         $databaseSeederFile = database_path('seeders/DatabaseSeeder.php');
         if (File::exists($databaseSeederFile)) {
             $fileContents = File::get($databaseSeederFile);
-            // Check if $this->call([]) exists
             if (strpos($fileContents, '$this->call([') === false) {
-                // If it doesn't exist, log a warning
                 $this->info("Cannot add seeder to DatabaseSeeder.php automatically. Please add '{$seederClass}' to the \$this->call([]) array manually.");
                 return;
             }
 
-            // If $this->call([]) exists, add the seeder class if not already present
             $needle = '$this->call([';
             if (strpos($fileContents, $seederClass) === false) {
                 $replacement = "$needle\n            {$seederClass},";
@@ -91,7 +88,7 @@ class MakeFlutterCommand extends Command
     private function createMigration($name)
     {
         $directory = database_path("migrations/");
-        $tableName = Str::snake(Str::plural($name)); // Correct table name
+        $tableName = Str::snake(Str::plural($name));
         $existingMigration = $this->findExistingMigration($directory, $tableName);
 
         if ($existingMigration) {
