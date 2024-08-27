@@ -13,7 +13,6 @@ class FlutterServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // Register the command
         $this->commands([
             \Vendor\FlutterPackage\Console\Commands\MakeFlutterCommand::class,
         ]);
@@ -26,6 +25,6 @@ class FlutterServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // You can publish assets, config files, etc. here if needed
+        //
     }
 }

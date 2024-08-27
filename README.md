@@ -10,23 +10,23 @@ The **MakeFlutterCommand** package provides a Laravel artisan command to generat
 
 To get started, you need to require the package in your Laravel project using Composer:
 
-    composer require your-vendor/make-flutter-command
+    composer require ventom/make-flutter-command
 
 ### 2. Service Provider (If Not Auto-Discovered)
 
-If your package is not auto-discovered by Laravel, you need to manually register the service provider. Open the `config/app.php` file and add the service provider to the `providers` array:
+If ventom package is not auto-discovered by Laravel, you need to manually register the service provider. Open the `config/app.php` file and add the service provider to the `providers` array:
 
     'providers' => [
         // Other Service Providers
     
-        Vendor\Package\YourServiceProvider::class,
+        Vendor\Package\FlutterServiceProvider::class,
     ]
 
 ### 3. Publish Configuration (Optional)
 
 If your package includes configuration files that need to be published to the Laravel application's config directory, you can publish them using the following command:
 
-    php artisan vendor:publish --provider="Vendor\Package\YourServiceProvider"
+    php artisan vendor:publish --provider="Vendor\Package\FlutterServiceProvider"
 
 ## Usage
 
